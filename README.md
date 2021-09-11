@@ -1,6 +1,6 @@
 ![](https://img.shields.io/badge/Microverse-blueviolet)
 
-# Marc Raphael's Portofolio
+# Marc Raphael's Capstone project
 
 >Welcome to my Capstone project, with three main versions (mobile, tablette, and desktop) as you can see in the screenshots below.
 

@@ -1,0 +1,15 @@
+:root {
+  --dark-text: #272a31;
+  --dark-background: #313235;
+  --red: #fa4229;
+  --gray: #d3d3d3;
+  /* calling: var(--color) */
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  list-style: none;
+  text-decoration: none;
+}

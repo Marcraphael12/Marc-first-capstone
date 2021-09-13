@@ -56,7 +56,7 @@ footer { padding: 0 20px; }
 .h-block1 {
   width: 100%;
   background: var(--dark-background);
-  padding: 5px 10%;
+  padding: 5px 7.5%;
 }
 
 .h-block1 ul {
@@ -69,13 +69,33 @@ footer { padding: 0 20px; }
 
 .h-block2 {
   width: 100%;
-  max-width: 80%;
-  height: 50px;
+  max-width: 85%;
+  height: auto;
 }
 
 .logo-img {
   width: 100px;
-  height: auto;
+  height: 80px;
+}
+
+.nav-links2 {
+  color: var(--dark-text);
+  font-size: 14px;
+  font-weight: 400;
+}
+
+.h-nav { width: 55%; }
+
+.h-nav ul { width: 100%; }
+
+.school-name {
+  width: 150px;
+  height: 50px;
+  border: solid 4px var(--red);
+  font-size: 16px;
+  font-weight: 700;
+  color: var(--red);
+  justify-content: center;
 }
 
 /* Home page: This part is only for home page style */

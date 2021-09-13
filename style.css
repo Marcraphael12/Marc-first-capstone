@@ -131,7 +131,7 @@ footer { padding: 0 20px; }
   font-weight: 400;
 }
 
-.partners h2:after {
+.partners h2::after {
   display: block;
   content: " ";
   width: 40px;
@@ -209,6 +209,7 @@ footer {
   height: 100%;
   background: rgba(255, 255, 255, 0.5);
 }
+
 .a-presentation {
   text-align: center;
   width: 100%;
@@ -227,7 +228,7 @@ footer {
   max-width: 500px;
 }
 
-.a-presentation h1:after {
+.a-presentation h1::after {
   content: " ";
   display: flex;
   width: 30px;
@@ -246,7 +247,7 @@ footer {
   font-size: 16px;
   font-weight: 300;
   height: auto;
-  border: solid 1px rgba(49,50,53,0.47);
+  border: solid 1px rgba(49, 50, 53, 0.47);
   padding: 30px 5%;
   background: white;
 }
@@ -260,7 +261,7 @@ footer {
 .email-contact li {
   color: var(--dark-text);
   font-size: 16px;
-  font-weight: 300;
+  font-weight: 400;
   width: 100%;
   height: auto;
   margin-top: 10px;
@@ -287,8 +288,8 @@ footer {
   text-align: center;
 }
 
-.latest h1:after,
-.ceremonies h2:after {
+.latest h1::after,
+.ceremonies h2::after {
   content: " ";
   width: 30px;
   height: 4px;
@@ -310,7 +311,7 @@ footer {
 
 .simple-logo {
   margin-top: 30px;
-  border: solid 1px rgba(49,50,53,0.47);
+  border: solid 1px rgba(49, 50, 53, 0.47);
   padding: 0 50px;
 }
 
@@ -355,6 +356,7 @@ footer {
   width: 100%;
   height: 100%;
   justify-content: center;
+
   /* background: rgba(250, 65, 41, 0.5); */
   background: rgba(255, 0, 0, 0.5);
 }

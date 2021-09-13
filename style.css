@@ -84,7 +84,12 @@ footer { padding: 0 20px; }
   font-weight: 400;
 }
 
-.h-nav { width: 55%; }
+.h-nav {
+  width: 55%;
+  max-width: 530px;
+  margin-left: auto;
+  margin-right: 50px;
+}
 
 .h-nav ul { width: 100%; }
 
@@ -96,6 +101,38 @@ footer { padding: 0 20px; }
   font-weight: 700;
   color: var(--red);
   justify-content: center;
+}
+
+.partners {
+  background: var(--dark-background);
+  padding: 50px 10%;
+}
+
+.partners h2 {
+  color: var(--white);
+  font-size: 20px;
+  font-weight: 400;
+}
+
+.partners h2:after {
+  display: block;
+  content: " ";
+  width: 40px;
+  height: 3px;
+  margin: 5px 0 50px 0;
+  background: var(--red);
+  align-self: center;
+}
+
+.partner-list {
+  width: 100%;
+  height: auto;
+  max-width: 1090px;
+}
+
+.partner {
+  width: 100px;
+  height: auto;
 }
 
 /* Home page: This part is only for home page style */

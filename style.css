@@ -1,8 +1,10 @@
+/* Common style: This part is for both home and about page */
 :root {
   --dark-text: #272a31;
   --dark-background: #313235;
   --red: #fa4229;
   --gray: #d3d3d3;
+  
   /* calling: var(--color) */
 }
 
@@ -13,3 +15,7 @@
   list-style: none;
   text-decoration: none;
 }
+
+/* Home page: This part is only for home page style */
+
+/* About page: This part is only for about page style */

@@ -63,6 +63,7 @@ footer { padding: 0 20px; }
   width: 100%;
   max-width: 300px;
   margin: 0 0 0 auto;
+  font-size: 12px;
 }
 
 /* Home page: This part is only for home page style */

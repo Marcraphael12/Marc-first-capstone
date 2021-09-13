@@ -162,6 +162,10 @@ footer {
 
 .f-link { background: var(--white); }
 
+.h-footer {
+  background-color: white;
+}
+
 .f-block {
   width: 100%;
   max-width: 70%;
@@ -185,6 +189,11 @@ footer {
   font-weight: 300;
   align-self: flex-start;
   margin-top: 20px;
+}
+
+.h-f-block h3,
+.h-f-block p {
+  color: var(--dark-text);
 }
 
 @media screen and (min-width: 768px) {

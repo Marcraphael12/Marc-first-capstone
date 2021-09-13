@@ -22,6 +22,11 @@
 
 body { background-color: var(--gray); }
 
+.main {
+  background-image: url(./images/backgrounds/students.jpg);
+  background-size: 100% 100%;
+}
+
 .inline-center {
   display: flex;
   justify-content: space-between;
@@ -47,14 +52,20 @@ footer { padding: 0 20px; }
 .page-header {
   width: 100%;
   height: auto;
-  box-shadow: 0 2px 5px -3px var(--dark-background);
-  background: var(--white);
+  background: var(--gray);
 }
 
 .menu {
   border: none;
   background: none;
   align-self: flex-start;
+  margin-left: 10%;
+  margin-top: 50px;
+}
+
+.menu img {
+  width: 30px;
+  height: auto;
 }
 
 .h-block1 {
@@ -126,7 +137,7 @@ footer { padding: 0 20px; }
   width: 40px;
   height: 3px;
   margin: 5px 0 50px 0;
-  background: var(--red);
+  background: rgba(250, 65, 41, 0.5);
   align-self: center;
 }
 
@@ -146,17 +157,20 @@ footer {
   height: auto;
   padding: 50px 5%;
   flex-wrap: nowrap !important;
-  background: var(--gray);
+  background: var(--dark-background);
 }
+
+.f-link { background: var(--white); }
 
 .f-block {
   width: 100%;
   max-width: 70%;
   height: 100%;
+  margin-left: 20px;
 }
 
 .f-block h3 {
-  color: var(--dark-text);
+  color: var(--white);
   font-size: 16px;
   font-weight: 400;
   align-self: flex-start;
@@ -165,7 +179,7 @@ footer {
 
 .f-block p {
   display: none;
-  color: var(--dark-text);
+  color: var(--white);
   height: auto;
   font-size: 16px;
   font-weight: 300;
@@ -179,15 +193,22 @@ footer {
   .h-block2 { display: flex; }
 
   .menu { display: none; }
+
+  .page-header {
+    background: white;
+    box-shadow: 0 2px 5px -3px var(--dark-background);
+  }
 }
 
 /* Home page: This part is only for home page style */
 
 /* About page: This part is only for about page style */
-.main {
-  margin-top: 50px;
+.introduction {
+  padding: 50px 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(255, 255, 255, 0.5);
 }
-
 .a-presentation {
   text-align: center;
   width: 100%;
@@ -211,7 +232,7 @@ footer {
   display: flex;
   width: 30px;
   height: 3px;
-  background: var(--red);
+  background: rgba(250, 65, 41, 0.5);
   margin-top: 30px;
 }
 
@@ -256,26 +277,28 @@ footer {
   width: 100%;
   height: auto;
   background: var(--white);
-  margin-top: 50px;
-  padding: 50px 5%;
-  box-shadow: 0 0 0 1px rgba(49, 50, 53, 0.1);
+  padding: 100px 5%;
+  border: solid 1px rgba(49, 50, 53, 0.1);
 }
 
-.latest h1 {
+.latest h1,
+.ceremonies h2 {
   color: var(--dark-text);
   text-align: center;
 }
 
-.latest h1:after {
+.latest h1:after,
+.ceremonies h2:after {
   content: " ";
   width: 30px;
   height: 4px;
   display: flex;
-  background: var(--red);
+  background: rgba(250, 65, 41, 0.5);
   margin-top: 20px;
 }
 
-.latest p {
+.latest p,
+.ceremonies p {
   color: var(--dark-text);
   font-size: 12px;
   font-weight: 300;
@@ -289,4 +312,60 @@ footer {
   margin-top: 30px;
   border: solid 1px rgba(49,50,53,0.47);
   padding: 0 50px;
+}
+
+.ceremonies {
+  width: 100%;
+  height: auto;
+  background: var(--white);
+  padding: 50px 5%;
+}
+
+.pic-list {
+  width: 100%;
+  max-width: 750px;
+  margin-top: 30px;
+}
+
+.latest-graduation-pic1,
+.latest-graduation-pic2 {
+  width: 350px;
+  height: 300px;
+  justify-content: center;
+  margin-bottom: 20px;
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+}
+
+.latest-graduation-pic1 {
+  background-image: url(./images/backgrounds/graduate1.jpg);
+}
+
+.latest-graduation-pic2 {
+  background-image: url(./images/backgrounds/graduate2.jpg);
+}
+
+@media screen and (min-width: 768px) {
+  .pic-list {
+    flex-direction: row;
+  }
+}
+
+.date {
+  width: 100%;
+  height: 100%;
+  justify-content: center;
+  /* background: rgba(250, 65, 41, 0.5); */
+  background: rgba(255, 0, 0, 0.5);
+}
+
+.year {
+  font-family: 'Poppins', sans-serif;
+  font-size: 20px;
+  font-weight: 800;
+}
+
+.day {
+  font-size: 20px;
+  font-weight: 400;
 }

@@ -44,7 +44,6 @@ footer { padding: 0 20px; }
 .page-header {
   width: 100%;
   height: auto;
-  box-shadow: 0 0 2px blue;
 }
 
 .menu {
@@ -133,6 +132,36 @@ footer { padding: 0 20px; }
 .partner {
   width: 100px;
   height: auto;
+}
+
+footer {
+  width: 100%;
+  height: auto;
+  padding: 50px 5%;
+  flex-wrap: nowrap !important;
+}
+
+.f-block {
+  width: 100%;
+  max-width: 70%;
+  height: 100%;
+}
+
+.f-block h3 {
+  color: var(--dark-text);
+  font-size: 16px;
+  font-weight: 400;
+  align-self: flex-start;
+  height: auto;
+}
+
+.f-block p {
+  color: var(--dark-text);
+  height: auto;
+  font-size: 16px;
+  font-weight: 300;
+  align-self: flex-start;
+  margin-top: 20px;
 }
 
 /* Home page: This part is only for home page style */

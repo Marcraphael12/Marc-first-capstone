@@ -4,6 +4,7 @@
   --dark-background: #313235;
   --red: #fa4229;
   --gray: #d3d3d3;
+  --white: white;
 
   /* calling: var(--color) */
 }
@@ -14,6 +15,7 @@
   box-sizing: border-box;
   list-style: none;
   text-decoration: none;
+  color: var(--white);
 }
 
 .inline-center {
@@ -29,15 +31,12 @@
   justify-content: space-between;
 }
 
-ul,
 li {
   width: max-content;
   height: auto;
-  border: solid 1px red;
 }
 
 section,
-header,
 footer { padding: 0 20px; }
 
 .page-header {
@@ -50,6 +49,12 @@ footer { padding: 0 20px; }
   border: none;
   background: none;
   align-self: flex-start;
+}
+
+.h-block1 {
+  align-self: flex-end;
+  width: 100%;
+  background: var(--dark-background);
 }
 
 /* Home page: This part is only for home page style */

@@ -30,6 +30,7 @@
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+  align-items: center;
 }
 
 li {
@@ -64,6 +65,17 @@ footer { padding: 0 20px; }
   max-width: 300px;
   margin: 0 0 0 auto;
   font-size: 12px;
+}
+
+.h-block2 {
+  width: 100%;
+  max-width: 80%;
+  height: 50px;
+}
+
+.logo-img {
+  width: 100px;
+  height: auto;
 }
 
 /* Home page: This part is only for home page style */

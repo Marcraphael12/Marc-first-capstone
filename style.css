@@ -200,6 +200,81 @@ footer {
   }
 }
 
+.main-program {
+  background-image: url(./images/backgrounds/darkbkg.jpg);
+  width: 100%;
+  height: auto;
+  padding: 50px 5%;
+}
+
+.main-program h2 {
+  font-family: 'Poppins', sans-serif;
+  font-size: 25px;
+  font-weight: 700;
+  width: 100%;
+  height: auto;
+  justify-content: center;
+}
+
+.main-program h2::after {
+  content: " ";
+  display: flex;
+  width: 40px;
+  height: 2px;
+  background: rgba(250, 65, 41, 1);
+  margin-top: 10px;
+  margin-bottom: 20px;
+}
+
+.activities-list {
+  width: 100%;
+  max-width: 450px;
+  height: auto;
+  margin-bottom: 40px;
+}
+
+.activities {
+  width: 100%;
+  height: auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: rgba(250, 255, 255, 0.3);
+  margin-bottom: 5px;
+  padding: 5px 3%;
+}
+
+.activities img {
+  width: 20px;
+  height: 20px;
+}
+
+.activities h3 {
+  width: 28%;
+  font-family: 'Poppins', sans-serif;
+  font-size: 18px;
+  color: var(--red);
+}
+
+.activities p {
+  width: 60%;
+  font-family: 'Poppins', sans-serif;
+  font-size: 14px;
+  font-weight: 300;
+}
+
+.join {
+  height: 60px;
+  width: 300px;
+  background-color: var(--red);
+  justify-content: center;
+  font-size: 18px;
+  font-weight: 700;
+}
+
+.join:hover {
+  border: solid 2px white;
+}
 /* Home page: This part is only for home page style */
 .h-main {
   width: 100%;
@@ -229,7 +304,7 @@ footer {
   margin-bottom: 30px;
 }
 
-.hello span {
+.welcome {
   font-family: 'Poppins', sans-serif;
   font-size: 16px;
   font-weight: 500;
@@ -237,7 +312,7 @@ footer {
   margin-bottom: 10px;
 }
 
-.hello h1 {
+.courses {
   color: var(--red);
   font-family: 'Poppins', sans-serif;
   font-size: 30px;
@@ -245,10 +320,41 @@ footer {
   width: 100%;
   max-width: 500px;
   height: auto;
-  line-height: 25px;
+  line-height: 30px;
   background-image: url(./images/backgrounds/redBlack.jpeg);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
+}
+
+@media screen and (min-width: 768px) {
+  .activities-list {
+    flex-direction: row;
+    max-width: 900px;
+  }
+
+  .activities {
+    width: 19%;
+    flex-direction: column;
+    height: 200px;
+    padding: 10px 0;
+  }
+
+  .activities p,
+  .activities h3 {
+    width: 100%;
+    text-align: center;
+  }
+
+  .courses {
+    font-size: 40px;
+    font-weight: 800;
+    max-width: 700px;
+    line-height: 35px;
+  }
+
+  .welcome {
+    font-size: 20px;
+  }
 }
 
 .h-description {

@@ -4,7 +4,7 @@
   --dark-background: #313235;
   --red: #fa4229;
   --gray: #d3d3d3;
-  
+
   /* calling: var(--color) */
 }
 
@@ -14,6 +14,26 @@
   box-sizing: border-box;
   list-style: none;
   text-decoration: none;
+}
+
+.inline-center {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.column-center {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+ul,
+li {
+  width: max-content;
+  height: auto;
+  border: solid 1px red;
 }
 
 /* Home page: This part is only for home page style */

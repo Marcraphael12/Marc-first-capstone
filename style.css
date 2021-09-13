@@ -52,9 +52,16 @@ footer { padding: 0 20px; }
 }
 
 .h-block1 {
-  align-self: flex-end;
   width: 100%;
   background: var(--dark-background);
+  padding: 5px 10%;
+}
+
+.h-block1 ul {
+  align-self: flex-end;
+  width: 100%;
+  max-width: 300px;
+  margin: 0 0 0 auto;
 }
 
 /* Home page: This part is only for home page style */

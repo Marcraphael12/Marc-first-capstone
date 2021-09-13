@@ -16,6 +16,7 @@
   list-style: none;
   text-decoration: none;
   color: var(--white);
+  font-family: 'Lato', sans-serif;
 }
 
 .inline-center {

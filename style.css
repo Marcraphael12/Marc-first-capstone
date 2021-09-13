@@ -3,7 +3,7 @@
   --dark-text: #272a31;
   --dark-background: #313235;
   --red: #fa4229;
-  --gray: #d3d3d3;
+  --gray: #f7f7f7;
   --white: white;
 
   /* calling: var(--color) */
@@ -18,6 +18,8 @@
   color: var(--white);
   font-family: 'Lato', sans-serif;
 }
+
+body { background-color: var(--gray); }
 
 .inline-center {
   display: flex;
@@ -44,6 +46,8 @@ footer { padding: 0 20px; }
 .page-header {
   width: 100%;
   height: auto;
+  box-shadow: 0 2px 5px -3px var(--dark-background);
+  background: var(--white);
 }
 
 .menu {
@@ -141,6 +145,7 @@ footer {
   height: auto;
   padding: 50px 5%;
   flex-wrap: nowrap !important;
+  background: var(--gray);
 }
 
 .f-block {
@@ -178,3 +183,70 @@ footer {
 /* Home page: This part is only for home page style */
 
 /* About page: This part is only for about page style */
+.main {
+  margin-top: 50px;
+}
+
+.a-presentation {
+  text-align: center;
+  width: 100%;
+  max-width: 85%;
+  height: auto;
+}
+
+.a-presentation h1 {
+  color: var(--red);
+  font-family: 'Poppins', sans-serif;
+  font-size: 30px;
+  font-weight: 700;
+  line-height: 30px;
+  text-transform: uppercase;
+  width: 100%;
+  max-width: 500px;
+}
+
+.a-presentation h1:after {
+  content: " ";
+  display: flex;
+  width: 30px;
+  height: 3px;
+  background: var(--red);
+  margin-top: 30px;
+}
+
+.a-description {
+  width: 100%;
+  height: auto;
+}
+
+.a-description p {
+  color: var(--dark-text);
+  font-size: 16px;
+  font-weight: 300;
+  height: auto;
+  box-shadow: 0 0 5px -1px var(--dark-background);
+  padding: 30px 5%;
+  background: white;
+}
+
+.email-contact {
+  width: 100%;
+  height: auto;
+  margin-top: 50px;
+}
+
+.email-contact li {
+  color: var(--dark-text);
+  font-size: 16px;
+  font-weight: 300;
+  width: 100%;
+  height: auto;
+  margin-top: 10px;
+}
+
+.email {
+  color: var(--dark-text);
+  font-size: 16px;
+  font-weight: 700;
+  text-decoration: underline;
+}

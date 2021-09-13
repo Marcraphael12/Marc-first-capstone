@@ -36,6 +36,22 @@ li {
   border: solid 1px red;
 }
 
+section,
+header,
+footer { padding: 0 20px; }
+
+.page-header {
+  width: 100%;
+  height: auto;
+  box-shadow: 0 0 2px blue;
+}
+
+.menu {
+  border: none;
+  background: none;
+  align-self: flex-start;
+}
+
 /* Home page: This part is only for home page style */
 
 /* About page: This part is only for about page style */

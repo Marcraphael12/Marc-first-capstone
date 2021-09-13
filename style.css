@@ -53,6 +53,7 @@ footer { padding: 0 20px; }
 }
 
 .h-block1 {
+  display: none;
   width: 100%;
   background: var(--dark-background);
   padding: 5px 7.5%;
@@ -67,6 +68,7 @@ footer { padding: 0 20px; }
 }
 
 .h-block2 {
+  display: none;
   width: 100%;
   max-width: 85%;
   height: auto;
@@ -130,7 +132,7 @@ footer { padding: 0 20px; }
 }
 
 .partner {
-  width: 100px;
+  width: 70px;
   height: auto;
 }
 
@@ -156,12 +158,21 @@ footer {
 }
 
 .f-block p {
+  display: none;
   color: var(--dark-text);
   height: auto;
   font-size: 16px;
   font-weight: 300;
   align-self: flex-start;
   margin-top: 20px;
+}
+
+@media screen and (min-width: 768px) {
+  .f-block p,
+  .h-block1,
+  .h-block2 { display: flex; }
+
+  .menu { display: none; }
 }
 
 /* Home page: This part is only for home page style */

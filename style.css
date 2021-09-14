@@ -405,6 +405,110 @@ footer {
   font-size: 20px;
 }
 
+.team-members {
+  width: 100%;
+  height: auto;
+  background-color: var(--white);
+  padding: 50px 5%;
+}
+
+.team-title {
+  color: var(--dark-text);
+  font-size: 30px;
+  font-weight: 700;
+  text-align: center;
+}
+
+.team-title::after {
+  content: " ";
+  display: flex;
+  width: 50px;
+  height: 3px;
+  background: rgba(250, 65, 41, 0.5);
+  margin-top: 30px;
+  margin-bottom: 50px;
+}
+
+.students-testimony {
+  width: 100%;
+  max-width: 768px;
+  height: auto;
+}
+
+.student {
+  width: 100%;
+  max-width: 360px;
+  height: 110px;
+  flex-wrap: nowrap;
+  justify-content: center;
+  background-image: url(./images/backgrounds/cheked.svg);
+  background-repeat: no-repeat;
+  background-position: top left;
+  background-size: 80px 70%;
+  align-items: flex-end;
+  margin-bottom: 30px;
+}
+
+.student:nth-child(4),
+.student:nth-child(5),
+.student:nth-child(6) { display: none;; }
+
+.student-image {
+  width: 33%;
+  max-width: 100px;
+  height: 80%;
+}
+
+.informations {
+  width: 60%;
+  height: auto;
+  padding: 2% 2%;
+}
+
+.name {
+  color: var(--dark-text);
+  font-size: 14px;
+  font-family: 'Poppins', sans-serif;
+  font-weight: 500;
+}
+
+.post {
+  color: var(--red);
+  font-family: 'Poppins', sans-serif;
+  font-size: 8px;
+  font-weight: 400;
+  font-style: italic;
+  display: flex;
+  flex-direction: column;
+}
+
+.post::after {
+  content: " ";
+  display: flex;
+  width: 20px;
+  height: 3px;
+  background: var(--gray);
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+.testimony {
+  color: var(--dark-text);
+  font-size: 10px;
+  font-weight: 300;
+}
+
+@media screen and (min-width: 768px) {
+  .students-testimony {
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+
+  .student:nth-child(4),
+  .student:nth-child(5),
+  .student:nth-child(6) { display: flex; }
+}
+
 /* About page: This part is only for about page style */
 .introduction {
   padding: 50px 0;

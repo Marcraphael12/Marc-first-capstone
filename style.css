@@ -199,7 +199,7 @@ footer {
   .h-block1,
   .h-block2 { display: flex; }
 
-  .menu { display: none; }
+  .menu { display: none !important; }
 
   .page-header {
     background: white;

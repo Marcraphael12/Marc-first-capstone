@@ -6,8 +6,6 @@
   --red: #fa4229;
   --gray: #f7f7f7;
   --white: white;
-
-  /* calling: var(--color) */
 }
 
 * {
@@ -261,7 +259,7 @@ footer {
 .activities h3 {
   width: 28%;
   font-family: 'Poppins', sans-serif;
-  font-size: 18px;
+  font-size: 14px;
   color: var(--red);
 }
 
@@ -355,6 +353,8 @@ footer {
     text-align: center;
   }
 
+  .activities h3 { font-size: 18px; }
+
   .courses {
     font-size: 40px;
     font-weight: 800;
@@ -409,7 +409,7 @@ footer {
   width: 100%;
   height: auto;
   background-color: var(--white);
-  padding: 50px 5%;
+  padding: 50px 3%;
 }
 
 .team-title {
@@ -473,9 +473,9 @@ footer {
 }
 
 .post {
-  color: var(--red);
+  color: red/*var(--red)*/;
   font-family: 'Poppins', sans-serif;
-  font-size: 8px;
+  font-size: 10px;
   font-weight: 400;
   font-style: italic;
   display: flex;
@@ -487,7 +487,7 @@ footer {
   display: flex;
   width: 20px;
   height: 3px;
-  background: var(--gray);
+  background: var(--dark-gray);
   margin-top: 10px;
   margin-bottom: 10px;
 }

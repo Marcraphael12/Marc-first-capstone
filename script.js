@@ -1,7 +1,5 @@
-
 const nav = document.querySelector('.nav-menu');
 const body = document.querySelector('body');
-
 const btn = document.querySelector('.menu');
 const cls = document.querySelector('.cross');
 
@@ -12,7 +10,7 @@ btn.addEventListener('click', () => {
   btn.style.display = 'none';
 })
 
-cls.addEventListener('click', () =>{
+cls.addEventListener('click', () => {
   nav.classList.remove('show');
   nav.classList.add('.nav-menu');
   btn.style.display = 'initial';

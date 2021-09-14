@@ -1,0 +1,18 @@
+:root {
+  --dark-text: #272a31;
+  --dark-background: #313235;
+  --dark-gray: #797c85;
+  --red: #fa4229;
+  --gray: #f7f7f7;
+  --white: white;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  list-style: none;
+  text-decoration: none;
+  color: var(--white);
+  font-family: 'Lato', sans-serif;
+}

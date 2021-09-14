@@ -464,7 +464,7 @@ footer {
 
 .student:nth-child(4),
 .student:nth-child(5),
-.student:nth-child(6) { display: none;; }
+.student:nth-child(6) { display: none; }
 
 .student-image {
   width: 33%;
@@ -661,17 +661,17 @@ footer {
   cursor: pointer;
 }
 
-.latest-graduation-pic1:hover,
-.latest-graduation-pic2:hover {
-	transform: scale(1.5);
-}
-
 .latest-graduation-pic1 {
   background-image: url(./images/backgrounds/graduate1.jpg);
 }
 
 .latest-graduation-pic2 {
   background-image: url(./images/backgrounds/graduate2.jpg);
+}
+
+.latest-graduation-pic1:hover,
+.latest-graduation-pic2:hover {
+  transform: scale(1.5);
 }
 
 @media screen and (min-width: 768px) {

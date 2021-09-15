@@ -1,0 +1,701 @@
+/* Common style: This part is for both home and about page */
+:root {
+  --dark-text: #272a31;
+  --dark-background: #313235;
+  --dark-gray: #797c85;
+  --red: #fa4229;
+  --gray: #f7f7f7;
+  --white: white;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  list-style: none;
+  text-decoration: none;
+  color: var(--white);
+  font-family: 'Lato', sans-serif;
+}
+
+body { background-color: var(--gray); }
+
+.main {
+  background-image: url(./images/backgrounds/students.jpg);
+  background-size: 100% 100%;
+}
+
+.inline-center {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.column-center {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+}
+
+li {
+  width: max-content;
+  height: auto;
+}
+
+section,
+footer { padding: 0 20px; }
+
+.page-header {
+  width: 100%;
+  height: auto;
+  background: var(--gray);
+}
+
+.menu {
+  border: none;
+  background: none;
+  align-self: flex-start;
+  margin-left: 10%;
+  margin-top: 50px;
+}
+
+.menu img {
+  width: 30px;
+  height: auto;
+}
+
+.h-block1 {
+  display: none;
+  width: 100%;
+  background: var(--dark-background);
+  padding: 5px 7.5%;
+}
+
+.h-block1 ul {
+  align-self: flex-end;
+  width: 100%;
+  max-width: 300px;
+  margin: 0 0 0 auto;
+  font-size: 12px;
+}
+
+.h-block2 {
+  display: none;
+  width: 100%;
+  max-width: 85%;
+  height: auto;
+}
+
+.logo-img {
+  width: 100px;
+  height: 80px;
+}
+
+.nav-links2 {
+  color: var(--dark-text);
+  font-size: 14px;
+  font-weight: 400;
+}
+
+.h-nav {
+  width: 55%;
+  max-width: 530px;
+  margin-left: auto;
+  margin-right: 50px;
+}
+
+.h-nav ul { width: 100%; }
+
+.school-name {
+  width: 150px;
+  height: 50px;
+  border: solid 4px var(--red);
+  font-size: 16px;
+  font-weight: 700;
+  color: var(--red);
+  justify-content: center;
+}
+
+.partners {
+  background: var(--dark-background);
+  padding: 50px 10%;
+}
+
+.partners h2 {
+  color: var(--white);
+  font-size: 20px;
+  font-weight: 400;
+}
+
+.partners h2::after {
+  display: block;
+  content: " ";
+  width: 40px;
+  height: 3px;
+  margin: 5px 0 50px 0;
+  background: rgba(250, 65, 41, 0.5);
+  align-self: center;
+}
+
+.partner-list {
+  width: 100%;
+  height: auto;
+  max-width: 1090px;
+}
+
+.partner {
+  width: 70px;
+  height: auto;
+}
+
+footer {
+  width: 100%;
+  height: auto;
+  padding: 50px 5%;
+  flex-wrap: nowrap !important;
+  background: var(--dark-background);
+}
+
+.f-link { background: var(--white); }
+
+.h-footer {
+  background-color: white;
+}
+
+.f-block {
+  width: 100%;
+  max-width: 70%;
+  height: 100%;
+  margin-left: 20px;
+}
+
+.f-block h3 {
+  color: var(--white);
+  font-size: 16px;
+  font-weight: 400;
+  align-self: flex-start;
+  height: auto;
+}
+
+.f-block p {
+  display: none;
+  color: var(--white);
+  height: auto;
+  font-size: 16px;
+  font-weight: 300;
+  align-self: flex-start;
+  margin-top: 20px;
+}
+
+.h-f-block h3,
+.h-f-block p {
+  color: var(--dark-text);
+}
+
+@media screen and (min-width: 768px) {
+  .f-block p,
+  .h-block1,
+  .h-block2 { display: flex; }
+
+  .menu { display: none !important; }
+
+  .page-header {
+    background: white;
+    box-shadow: 0 2px 5px -3px var(--dark-background);
+  }
+}
+
+.main-program {
+  background-image: url(./images/backgrounds/darkbkg.jpg);
+  width: 100%;
+  height: auto;
+  padding: 50px 5%;
+}
+
+.main-program h2 {
+  font-family: 'Poppins', sans-serif;
+  font-size: 25px;
+  font-weight: 700;
+  width: 100%;
+  height: auto;
+  justify-content: center;
+}
+
+.main-program h2::after {
+  content: " ";
+  display: flex;
+  width: 40px;
+  height: 2px;
+  background: rgba(250, 65, 41, 1);
+  margin-top: 10px;
+  margin-bottom: 20px;
+}
+
+.activities-list {
+  width: 100%;
+  max-width: 450px;
+  height: auto;
+  margin-bottom: 40px;
+}
+
+.activities {
+  width: 100%;
+  height: auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: rgba(250, 255, 255, 0.3);
+  margin-bottom: 5px;
+  padding: 5px 3%;
+}
+
+.activities img {
+  width: 20px;
+  height: 20px;
+}
+
+.activities h3 {
+  width: 28%;
+  font-family: 'Poppins', sans-serif;
+  font-size: 14px;
+  color: var(--red);
+}
+
+.activities p {
+  width: 60%;
+  font-family: 'Poppins', sans-serif;
+  font-size: 14px;
+  font-weight: 300;
+}
+
+.join {
+  height: 60px;
+  width: 300px;
+  background-color: var(--red);
+  justify-content: center;
+  font-size: 18px;
+  font-weight: 700;
+}
+
+.join:hover {
+  border: solid 2px white;
+}
+
+/* Home page: This part is only for home page style */
+.h-main {
+  width: 100%;
+  height: auto;
+  background: none;
+}
+
+.h-presentation {
+  background-image: url(./images/backgrounds/students.jpg);
+  width: 100%;
+  height: auto;
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+  padding: 0;
+}
+
+.introduce {
+  width: 100%;
+  height: auto;
+  background-color: rgba(247, 247, 247, 0.5);
+  padding: 15% 15%;
+}
+
+.hello {
+  width: 100%;
+  height: auto;
+  margin-bottom: 30px;
+  transition: font-size 1s;
+}
+
+.welcome {
+  font-family: 'Poppins', sans-serif;
+  font-size: 16px;
+  font-weight: 500;
+  color: var(--red);
+  margin-bottom: 10px;
+  transition: font-size 1s;
+}
+
+.courses {
+  color: var(--red);
+  font-family: 'Poppins', sans-serif;
+  font-size: 30px;
+  font-weight: 800;
+  width: 100%;
+  max-width: 500px;
+  height: auto;
+  line-height: 30px;
+  background-image: url(./images/backgrounds/redBlack.jpeg);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+@media screen and (min-width: 768px) {
+  .activities-list {
+    flex-direction: row;
+    max-width: 900px;
+  }
+
+  .activities {
+    width: 19%;
+    flex-direction: column;
+    height: 200px;
+    padding: 10px 0;
+  }
+
+  .activities p,
+  .activities h3 {
+    width: 100%;
+    text-align: center;
+  }
+
+  .activities h3 { font-size: 18px; }
+
+  .courses {
+    font-size: 40px;
+    font-weight: 800;
+    max-width: 700px;
+    line-height: 40px;
+  }
+
+  .welcome {
+    font-size: 20px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .courses {
+    font-size: 70px;
+    font-weight: 800;
+    max-width: 1100px;
+    line-height: 65px;
+  }
+
+  .welcome {
+    font-size: 40px;
+  }
+}
+
+.h-description {
+  width: 100%;
+  max-width: 500px;
+  height: auto;
+  font-size: 16px;
+  font-weight: 400;
+  color: var(--dark-text);
+}
+
+.description-text {
+  width: 100%;
+  max-width: 500px;
+  height: auto;
+  font-size: 16px;
+  font-weight: 400;
+  color: var(--dark-text);
+  padding: 10px 10px;
+  border: solid 3px white;
+  background: var(--gray);
+  margin-bottom: 10px;
+}
+
+.dates {
+  color: var(--dark-text);
+  width: 100%;
+  max-width: 350px;
+  font-size: 16px;
+  font-weight: 300;
+  align-items: flex-start;
+}
+
+.dates span {
+  font-family: 'Poppins', sans-serif;
+  color: inherit;
+  font-weight: 800;
+  font-size: 20px;
+}
+
+.team-members {
+  width: 100%;
+  height: auto;
+  background-color: var(--white);
+  padding: 50px 3%;
+}
+
+.team-title {
+  color: var(--dark-text);
+  font-size: 30px;
+  font-weight: 700;
+  text-align: center;
+}
+
+.team-title::after {
+  content: " ";
+  display: flex;
+  width: 50px;
+  height: 3px;
+  background: rgba(250, 65, 41, 0.5);
+  margin-top: 30px;
+  margin-bottom: 50px;
+}
+
+.students-testimony {
+  width: 100%;
+  max-width: 768px;
+  height: auto;
+}
+
+.student {
+  width: 100%;
+  max-width: 360px;
+  height: 110px;
+  flex-wrap: nowrap;
+  justify-content: center;
+  background-image: url(./images/backgrounds/cheked.svg);
+  background-repeat: no-repeat;
+  background-position: top left;
+  background-size: 80px 70%;
+  align-items: flex-end;
+  margin-bottom: 30px;
+}
+
+.student:nth-child(4),
+.student:nth-child(5),
+.student:nth-child(6) { display: none; }
+
+.student-image {
+  width: 33%;
+  max-width: 100px;
+  height: 80%;
+}
+
+.informations {
+  width: 60%;
+  height: auto;
+  padding: 2% 2%;
+}
+
+.name {
+  color: var(--dark-text);
+  font-size: 14px;
+  font-family: 'Poppins', sans-serif;
+  font-weight: 500;
+}
+
+.post {
+  color: red/*var(--red)*/;
+  font-family: 'Poppins', sans-serif;
+  font-size: 10px;
+  font-weight: 400;
+  font-style: italic;
+  display: flex;
+  flex-direction: column;
+}
+
+.post::after {
+  content: " ";
+  display: flex;
+  width: 20px;
+  height: 3px;
+  background: var(--dark-gray);
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+.testimony {
+  color: var(--dark-text);
+  font-size: 10px;
+  font-weight: 300;
+}
+
+@media screen and (min-width: 768px) {
+  .students-testimony {
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+}
+
+/* About page: This part is only for about page style */
+.introduction {
+  padding: 50px 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(255, 255, 255, 0.5);
+}
+
+.a-presentation {
+  text-align: center;
+  width: 100%;
+  max-width: 85%;
+  height: auto;
+}
+
+.a-presentation h1 {
+  color: var(--red);
+  font-family: 'Poppins', sans-serif;
+  font-size: 30px;
+  font-weight: 700;
+  line-height: 30px;
+  text-transform: uppercase;
+  width: 100%;
+  max-width: 500px;
+  transition: font-size 0.5s ease-in-out;
+}
+
+.a-presentation h1::after {
+  content: " ";
+  display: flex;
+  width: 30px;
+  height: 3px;
+  background: rgba(250, 65, 41, 0.5);
+  margin-top: 30px;
+}
+
+.a-description {
+  width: 100%;
+  height: auto;
+}
+
+.a-description p {
+  color: var(--dark-text);
+  font-size: 16px;
+  font-weight: 300;
+  height: auto;
+  border: solid 1px rgba(49, 50, 53, 0.47);
+  padding: 30px 5%;
+  background: white;
+  width: 100%;
+  max-width: 1200px;
+}
+
+.email-contact {
+  width: 100%;
+  height: auto;
+  margin-top: 50px;
+}
+
+.email-contact li {
+  color: var(--dark-text);
+  font-size: 16px;
+  font-weight: 400;
+  width: 100%;
+  height: auto;
+  margin-top: 10px;
+}
+
+.email {
+  color: var(--dark-text);
+  font-size: 16px;
+  font-weight: 700;
+  text-decoration: underline;
+}
+
+.latest {
+  width: 100%;
+  height: auto;
+  background: var(--white);
+  padding: 100px 5%;
+  border: solid 1px rgba(49, 50, 53, 0.1);
+}
+
+.latest h1,
+.ceremonies h2 {
+  color: var(--dark-text);
+  text-align: center;
+}
+
+.latest h1::after,
+.ceremonies h2::after {
+  content: " ";
+  width: 30px;
+  height: 4px;
+  display: flex;
+  background: rgba(250, 65, 41, 0.5);
+  margin-top: 20px;
+}
+
+.latest p,
+.ceremonies p {
+  color: var(--dark-text);
+  font-size: 12px;
+  font-weight: 300;
+  text-align: center;
+  width: 100%;
+  max-width: 60%;
+  margin-top: 10px;
+}
+
+.simple-logo {
+  margin-top: 30px;
+  border: solid 1px rgba(49, 50, 53, 0.47);
+  padding: 0 50px;
+}
+
+.ceremonies {
+  width: 100%;
+  height: auto;
+  background: var(--white);
+  padding: 50px 5%;
+}
+
+.pic-list {
+  width: 100%;
+  max-width: 750px;
+  margin-top: 30px;
+}
+
+.latest-graduation-pic1,
+.latest-graduation-pic2 {
+  width: 350px;
+  height: 300px;
+  justify-content: center;
+  margin-bottom: 20px;
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+  cursor: pointer;
+}
+
+.latest-graduation-pic1 {
+  background-image: url(./images/backgrounds/graduate1.jpg);
+}
+
+.latest-graduation-pic2 {
+  background-image: url(./images/backgrounds/graduate2.jpg);
+}
+
+.latest-graduation-pic1:hover,
+.latest-graduation-pic2:hover {
+  transform: scale(1.2);
+  transition: transform 0.8s ease-in-out;
+}
+
+@media screen and (min-width: 768px) {
+  .pic-list {
+    flex-direction: row;
+  }
+}
+
+.date {
+  width: 100%;
+  height: 100%;
+  justify-content: center;
+
+  /* background: rgba(250, 65, 41, 0.5); */
+  background: rgba(255, 0, 0, 0.5);
+}
+
+.year {
+  font-family: 'Poppins', sans-serif;
+  font-size: 20px;
+  font-weight: 800;
+}
+
+.day {
+  font-size: 20px;
+  font-weight: 400;
+}

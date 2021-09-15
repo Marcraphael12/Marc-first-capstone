@@ -18,62 +18,62 @@
 }
 
 .nav-menu {
-	position: fixed;
-	top: 0;
-	left: 0;
-	height: 100vh;
-	color: red;
-	background: rgba(0, 0, 0, 0.5);
-	width: 40%;
-	transform: translateX(-100%);
-	transition: transform 0.5s ease-in-out;
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100vh;
+  color: red;
+  background: rgba(0, 0, 0, 0.5);
+  width: 40%;
+  transform: translateX(-100%);
+  transition: transform 0.5s ease-in-out;
 }
 
 .show {
-	transform: translateX(0);
-	transition: transform 1s ease-in-out;
+  transform: translateX(0);
+  transition: transform 1s ease-in-out;
 }
 
 .nav-menu ul {
-	width: 100%;
-	max-width: 300px;
-	background-image: url();
-	display: flex;
-	flex-direction: column;
-	height: auto;
+  width: 100%;
+  max-width: 300px;
+  background-image: url();
+  display: flex;
+  flex-direction: column;
+  height: auto;
 }
 
 .nav-menu li {
-	margin-bottom: 10px;
-	width: 100%;
-	display: flex;
-	padding: 5% 5%;
+  margin-bottom: 10px;
+  width: 100%;
+  display: flex;
+  padding: 5% 5%;
 }
 
 .nav-menu li a {
-	color: white;
-	transition: color 0.2s ease-in-out;
-	font-family: 'Poppins', sans-serif;
-	font-weight: 700;
+  color: white;
+  transition: color 0.2s ease-in-out;
+  font-family: 'Poppins', sans-serif;
+  font-weight: 700;
 }
 
 .nav-menu li a:hover {
-	color: var(--red);
+  color: var(--red);
 }
 
 .cross {
-	font-size: 30px;
-	font-weight: 500;
-	background: none;
-	border: none;
-	color: white;
-	padding: 2% 5%;
-	position: fixed;
-	top: 0;
-	right: 0;
-	transition: color 0.2s ease-in-out;
+  font-size: 30px;
+  font-weight: 500;
+  background: none;
+  border: none;
+  color: white;
+  padding: 2% 5%;
+  position: fixed;
+  top: 0;
+  right: 0;
+  transition: color 0.2s ease-in-out;
 }
 
 .cross:hover {
-	color: red;
+  color: red;
 }

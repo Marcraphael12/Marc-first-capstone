@@ -8,10 +8,10 @@ btn.addEventListener('click', () => {
   nav.classList.add('show');
   nav.classList.remove('.nav-menu');
   btn.style.display = 'none';
-})
+});
 
 cls.addEventListener('click', () => {
   nav.classList.remove('show');
   nav.classList.add('.nav-menu');
   btn.style.display = 'initial';
-})
+});

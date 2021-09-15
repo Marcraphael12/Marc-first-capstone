@@ -464,10 +464,6 @@ footer {
   margin-bottom: 30px;
 }
 
-.student:nth-child(4),
-.student:nth-child(5),
-.student:nth-child(6) { display: none; }
-
 .student-image {
   width: 33%;
   max-width: 100px;

@@ -518,10 +518,6 @@ footer {
     flex-direction: row;
     flex-wrap: wrap;
   }
-
-  .student:nth-child(4),
-  .student:nth-child(5),
-  .student:nth-child(6) { display: flex; }
 }
 
 /* About page: This part is only for about page style */

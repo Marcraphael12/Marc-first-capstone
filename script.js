@@ -21,7 +21,7 @@ const student = [
     post: ['Post exsudatos labores itinerum longos.', 'Post exsudatos labores itinerum longos.', 'Post exsudatos labores itinerum longos.', 'Post exsudatos labores itinerum longos.', 'Post exsudatos labores itinerum longos.', 'Post exsudatos labores itinerum longos.'],
     pictures: ['./images/photos/profil1.jpg', './images/photos/profil2.jpg', './images/photos/profil3.jpg', './images/photos/profil4.jpg', './images/photos/profil5.jpg', './images/photos/profil6.jpeg'],
     testimony: ['Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod.Nemo quaeso miretur.', 'Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod.Nemo quaeso miretur.', 'Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod.Nemo quaeso miretur.', 'Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod.Nemo quaeso miretur.', 'Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod.Nemo quaeso miretur.', 'Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod.Nemo quaeso miretur.'],
-  }
+  },
 ];
 const partners = document.querySelector('.partners');
 const students = document.createElement('section');

@@ -4,7 +4,8 @@
 
 >Welcome to my Capstone project, with three main versions (mobile, tablette, and desktop) as you can see in the screenshots below.
 
-![mobile]()
+![](./images/backgrounds/ss.png)
+- [Take a look at this video to have a description of this project](https://www.loom.com/share/6b10ca9b295148cbb004fde9262ba33e?sharedAppSource=personal_library)
 
 It is a website for web development course with two pages : Home and About. I hope you will be satisfied with the work accomplished!
 

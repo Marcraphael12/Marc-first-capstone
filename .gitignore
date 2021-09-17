@@ -6,6 +6,9 @@ bin-release/
 
 # Other files and folders
 .settings/
+.stylelintrc.json
+.hintrc
+.eslintrc.json
 
 # Executables
 *.swf
